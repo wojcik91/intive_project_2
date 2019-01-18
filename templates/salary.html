@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <table>
+        {% for salary in object_list %}
+            <tr>
+                <th>{{ salary.years }}</th>
+                <th>{{ salary.salary }}</th>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock content %}

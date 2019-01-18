@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Intive Patronage 2019</title>
+    </head>
+    <body>
+        <header>
+            <h1><a href="{% url 'home' %}">Main menu</a> | <a href="{% url 'salary-list' %}">Salaries</a></h1>
+        </header>
+        <div>
+            {% block content %}
+            {% endblock content %}
+        </div>
+    </body>
+</html>
