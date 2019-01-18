@@ -1,12 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <table>
-        {% for salary in object_list %}
+    <div class="container">
+    <table class="table table-striped">
+        <thead class="thead-dark">
             <tr>
-                <th>{{ salary.years }}</th>
-                <th>{{ salary.salary }}</th>
+                <th scope="col">Years worked</th>
+                <th scope="col">Salary brutto</th>
             </tr>
-        {% endfor %}
+        </thead>
+        <tbody>
+            {% for salary in object_list %}
+                <tr>
+                    <th scope="row">{{ salary.years }}</th>
+                    <th>{{ salary.salary }}</th>
+                </tr>
+            {% endfor %}
+        </tbody>
     </table>
+    </div>  
 {% endblock content %}
