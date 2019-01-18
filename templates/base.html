@@ -9,9 +9,10 @@
         <title>Intive Patronage 2019</title>
     </head>
     <body>
-        <header>
-            <h1><a href="{% url 'home' %}">Main menu</a> | <a href="{% url 'salary-list' %}">Salaries</a></h1>
-        </header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+                <a class="navbar-brand" href="{% url 'home' %}">Home page</a>
+                <a class="navbar-brand" href="{% url 'salary-list' %}">Salary list</a>
+        </nav>
         <div>
             {% block content %}
             {% endblock content %}
